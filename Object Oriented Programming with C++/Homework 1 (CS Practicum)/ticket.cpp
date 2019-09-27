@@ -40,7 +40,7 @@ ticket& ticket::operator= (const ticket& right );
 	setTravellingWith(right.travellingWith);
      }
 
-	return *this;
+     return *this;
 }
 ticket::~ticket()
 {   cout<<"~ticket()"<<endl;
