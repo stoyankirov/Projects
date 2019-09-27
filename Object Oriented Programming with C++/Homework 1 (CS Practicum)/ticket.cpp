@@ -26,12 +26,21 @@ ticket::ticket(const ticket& right)
 
     setFirstStation(right.firstStation);
     setDestination(right.destination);
-    this->price=right.price;
+    setPrice(right.price);
     setTravellingWith(right.travellingWith);
 }
-ticket& ticket::operator= (const ticket& right);
+ticket& ticket::operator= (const ticket& right );
 {
     cout<<"ticket::operator= "<<endl;
+	if (this != &right)
+	{
+		setFirstStation(right.firstStation);
+		setDestination(right.destination);
+		setPrice(right.price);
+		setTravellingWith(right.travellingWith);
+	}
+
+	return *this;
 }
 ticket::~ticket()
 {   cout<<"~ticket()"<<endl;
