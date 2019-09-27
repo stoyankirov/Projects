@@ -14,7 +14,7 @@ class Employee
 
 		virtual int getSalary() const;
 		virtual Employee* clone() const { return new Employee(*this); };
-		~Employee();
+		virtual ~Employee();
 	private:
 		void copyEmployee(const Employee& other);
 		void deleteEmployee();
