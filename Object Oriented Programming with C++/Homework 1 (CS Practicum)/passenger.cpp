@@ -36,6 +36,14 @@ passenger::passenger(const passenger& right)
 passenger& passenger::operator= (const passenger& right);
 {
     cout<<"passenger::operator= "<<endl;
+	if (this != &other)
+	{
+		setMyName(right.myName);
+		setMyLuggage(right.myLuggage);
+		setMyTicket(right.myTicket);
+	}
+
+	return *this;
 }
 passenger::~passenger()
 {   cout<<"~passenger()"<<endl;
