@@ -50,8 +50,6 @@ passenger::~passenger()
 
     delete [] myName;
     myName=NULL;
-
-    myTicket.~ticket();
 }
 char* passenger::getMyName() const
 {
