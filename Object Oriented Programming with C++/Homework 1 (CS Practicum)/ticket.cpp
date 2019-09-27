@@ -32,13 +32,13 @@ ticket::ticket(const ticket& right)
 ticket& ticket::operator= (const ticket& right );
 {
     cout<<"ticket::operator= "<<endl;
-	if (this != &right)
-	{
-		setFirstStation(right.firstStation);
-		setDestination(right.destination);
-		setPrice(right.price);
-		setTravellingWith(right.travellingWith);
-	}
+    if (this != &right)
+    {
+	setFirstStation(right.firstStation);
+	setDestination(right.destination);
+	setPrice(right.price);
+	setTravellingWith(right.travellingWith);
+     }
 
 	return *this;
 }
