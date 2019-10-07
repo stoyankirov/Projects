@@ -49,12 +49,12 @@ void Company::removeSales(int maxSalary)
 {
 	for (int i = 0; i < _num; i++)
 	{
-		Employee* employee = dynamic_cast<Employee*>(_arr[i]);
-		if (employee != NULL)
+		Sales* sales = dynamic_cast<Sales*>(_arr[i]);
+		if (sales != NULL)
 		{
-			if (employee->getSalary() > maxSalary)
+			if (sales->getSalary() > maxSalary)
 			{
-				delete employee;
+				delete sales;
 
 				for (int j = i; j < _num - 1; j++)
 				{
@@ -112,12 +112,9 @@ void Company::removeEmployee(int maxSalary)
 {
 	for (int i = 0; i < _num; i++)
 	{
-		Employee* employee = dynamic_cast<Employee*>(_arr[i]);
-		if (employee != NULL)
-		{
-			if (employee->getSalary() > maxSalary)
+			if (_arr[i]->getSalary() > maxSalary)
 			{
-				delete employee;
+				delete _arr[i];
 
 				for (int j = i; j < _num - 1; j++)
 				{
@@ -126,6 +123,5 @@ void Company::removeEmployee(int maxSalary)
 				_arr[_num - 1] = NULL;
 				_num--;
 			}
-		}
 	}
 }
