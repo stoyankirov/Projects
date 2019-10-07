@@ -30,7 +30,7 @@ Manager& Manager::operator=(const Manager& other)
 }
 void Manager::setNickname(const char* nickname)
 {
-	assert(nickname);
+	assert(nickname != NULL);
 	delete[] _nickname;
 	_nickname = new char[strlen(nickname) + 1];
 	assert(_nickname != NULL);
