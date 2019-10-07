@@ -24,7 +24,7 @@ Employee& Employee::operator=(const Employee& other)
 }
 void Employee::setName(const char* name)
 {
-	assert(name);
+	assert(name != NULL);
 	delete[] _name;
 	_name = new char[strlen(name) + 1];
 	assert(_name != NULL);
