@@ -13,7 +13,7 @@ Manager::Manager(const char* name, int practise, int numOfPrograms, int numOfSal
 	setNickname(nickname);
 	setNumOfWins(numOfWins);
 }
-Manager::Manager(const Manager& other):Employee(other),Programmer(other),Sales(other)
+Manager::Manager(const Manager& other):Employee(other),Programmer(other),Sales(other),_nickname(NULL)
 {
 	copyOwn(other);
 }
