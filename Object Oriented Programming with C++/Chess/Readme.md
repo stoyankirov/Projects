@@ -6,7 +6,7 @@
   
   3. Functions which:
   
-    - show their allowed moves 
-    - check if they can capture any chess piece 
+      - show their allowed moves 
+      - check if they can capture any chess piece 
   
 
