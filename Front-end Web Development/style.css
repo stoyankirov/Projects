@@ -1,0 +1,299 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+#logo-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem 0rem;
+}
+#logo{
+    height: 5rem;
+    width: 8rem;
+    margin-right: 2rem;
+}
+a{
+    text-decoration: none;
+}
+#logo-container h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+    color: #8294A2;
+}
+#nav {
+    margin: 0;
+    padding: 0;
+    background-color: #8294A2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#nav h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 0.7rem;
+    display: none;
+}
+#nav a{
+    padding: 0.7rem 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
+#theme img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 0.1rem;
+}
+#nav a:hover{
+    background-color: #587e76;
+}
+#nav .icon{
+    display: none;
+}
+#nav .active{
+    background-color: rgb(0, 132, 255);
+}
+header{
+    width: 80%;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+@media screen and (max-width: 830px){
+    #nav a{display: none;}
+    #nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    #nav h1{
+        display: block;
+    }
+    #nav .icon{
+        display: block;
+    }
+    header{
+        width: 100%;
+        max-width: 830px;
+    }
+    header a{
+        display: none;
+    }
+}
+@media screen and (max-width: 830px){
+    #nav.responsive {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    #nav.responsive a.icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #nav.responsive a{
+        display: block;
+        text-align: left;
+    }
+}
+.dark-theme{
+    background-color: #212121;
+    color: white;
+}
+
+section{
+    width: 80%;
+    max-width: 75rem;
+    margin: 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+section h1{
+    width: 100%;
+    margin: 0rem 0rem 1rem 1rem;
+}
+/*Cars*/
+.slideshow{
+    position: relative;
+}
+.slideshow div img{
+    width: 21rem;
+    height: 15rem;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 3px;
+}
+.next{
+    right: 0;
+}
+.prev{
+    left: 0;
+}
+.slides1, .slides2, .slides3, .slides4, .slides5, .slides6, .slides7, .slides8, .slides9{
+    display: none;
+}
+.numbertext{
+    position: absolute;
+    top: 0.7rem;
+    left: 0.7rem;
+    color: #ffffff;
+}
+.advInfo h2{
+    word-break: keep-all;
+    font-size: 1rem;
+}
+.carName{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+.carPrice{
+    margin-top: 0.2rem;
+    text-decoration: underline;
+    font-weight: 900;
+}
+.advertisement{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 0.3rem solid #e0e0d1;
+    max-width: 23rem;
+}
+
+footer{
+    width: 80%;
+    max-width: 75rem;
+    margin: 0rem auto 1rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 1px solid #8294A2;
+    padding-top: 1rem;
+}
+
+
+/* Services*/
+#services{
+    display: flex;
+    flex-direction: column;
+}
+#services ol{
+    margin-left: 2rem;
+}
+#services h2{
+    word-break: keep-all;
+    font-size: 1rem;
+}
+#services h2, ol{
+    margin: 1rem;
+}
+#services p{
+    margin: 0rem 1rem;
+}
+
+/*Requests*/
+#request-heading{
+    text-align: center;
+}
+.under{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0.3rem 0;
+}
+.nextTo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin:0 0.5rem;
+}
+form{
+    width: 80%;
+    max-width: 38rem;
+    border: 0.5rem solid #e0e0d1;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem; 
+}
+form input, select{
+    width: 12rem;
+    height: 2rem;
+    border: 1px solid #8294A2;
+    border-radius: 0.25rem;
+}
+#additionalText{
+    width: 100%;
+    margin: 0 0.5rem;
+}
+#additional{
+    width: 100%;
+    max-width: 22rem;
+    height: 5rem;
+}
+#special{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto 0.5rem auto;
+}
+@media screen and (max-width: 830px){
+    
+    #additional{
+        width: 100%;
+        max-width: 15rem;
+    }
+}
+form button{
+    margin: 0.5rem auto;
+    width: 7rem;
+    height: 2rem;
+    background-color: #8294A2;
+    color: white;
+    font-size: 1rem;
+}
+form button:hover{
+    cursor: pointer;
+}
+
+/*Contacts*/
+#contacts-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+#contact-info h2{
+    font-size: 1rem;
+}
+#contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+#contacts-section iframe{
+    margin-top: 1rem;
+    border: 0;
+}
+
+
+

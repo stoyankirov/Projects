@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>Autoland</title>
+</head>
+<body>
+    <header>
+        <a href="homePage.html">
+            <div id="logo-container">
+                <img src="images/logo.png" alt="logo" id="logo">
+                <h1>Autoland</h1>
+            </div>
+        </a>
+        <div id="nav">
+            <h1>Autoland</h1>
+            <a href="cars.html" class="active">Автомобили</a>
+            <a href="services.html">Услуги</a>
+            <a href="request.html">Заявка</a>
+            <a href="contacts.html">Контакти</a>
+            <a id="theme"><img src="images/theme.png"></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <section>
+        <h1>Налични автомобили</h1>
+        
+        <div class="advertisement">
+            <div class="slideshow">
+                <div class="slides1">
+                    <div class="numbertext"></div>
+                    <img src="images/a7.1.jpg" alt="a7">
+                </div>
+                <div class="slides1">
+                    <div class="numbertext"></div>
+                    <img src="images/a7.2.jpg" alt="a7">
+                </div>
+                <div class="slides1">
+                    <div class="numbertext"></div>
+                    <img src="images/a7.3.jpg" alt="a7">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+            </div>
+            <div class="advInfo">
+                <h2 class="carName">Audi A7 Sportback 3.0 TDI quattro</h2>
+                <h2>Година: 2016</h2>
+                <h2>Пробег: 61.520 км</h2>
+                <h2>Мощност: 326 к.с.</h2>
+                <h2>Гориво: Дизел</h2>
+                <h2>Скоростна кутия: Автоматична</h2>
+                <h2 class="carPrice">Цена: 39.740 €</h2 class="carPrice">
+            </div>
+        </div>
+        
+        <div class="advertisement">
+            <div class="slideshow">
+                <div class="slides2">
+                    <div class="numbertext"></div>
+                    <img src="images/a5.1.jpg" alt="a5">
+                </div>
+                <div class="slides2">
+                    <div class="numbertext"></div>
+                    <img src="images/a5.2.jpg" alt="a5">
+                </div>
+                <div class="slides2">
+                    <div class="numbertext"></div>
+                    <img src="images/a5.3.jpg" alt="a5">
+                </div>
+                <div class="slides2">
+                    <div class="numbertext"></div>
+                    <img src="images/a5.4.jpg" alt="a5">
+                </div>
+                <div class="slides2">
+                    <div class="numbertext"></div>
+                    <img src="images/a5.5.jpg" alt="a5">
+                </div>
+    
+                <a class="prev" onclick="plusSlides(-1,1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1,1)">&#10095;</a>
+            </div>
+            <div class="advInfo">
+                <h2 class="carName">Audi A5 Sportback 40 TDI quattro</h2>
+                <h2>Година: 2020</h2>
+                <h2>Пробег: 15км</h2>
+                <h2>Мощност: 190 к.с.</h2>
+                <h2>Гориво: Дизел</h2>
+                <h2>Скоростна кутия: Автоматична</h2>
+                <h2 class="carPrice">Цена: 65.380 €</h2>
+            </div>
+        </div>
+        <div class="advertisement">
+            <div class="slideshow">
+                <div class="slides3">
+                    <div class="numbertext"></div>
+                    <img src="images/a4.1.jpg" alt="a7">
+                </div>
+                <div class="slides3">
+                    <div class="numbertext"></div>
+                    <img src="images/a4.2.jpg" alt="a7">
+                </div>
+                <div class="slides3">
+                    <div class="numbertext"></div>
+                    <img src="images/a4.3.jpg" alt="a7">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1,2)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1,2)">&#10095;</a>
+            </div>
+            <div class="advInfo">
+                <h2 class="carName">Audi A4 allroad quattro</h2>
+                <h2>Година: 2020</h2>
+                <h2>Пробег: 0 км</h2>
+                <h2>Мощност: 190 к.с.</h2>
+                <h2>Гориво: Дизел</h2>
+                <h2>Скоростна кутия: Автоматична</h2>
+                <h2 class="carPrice">Цена: 58.200 €</h2 class="carPrice">
+            </div>
+        </div>
+        <div class="advertisement">
+            <div class="slideshow">
+                <div class="slides4">
+                    <div class="numbertext"></div>
+                    <img src="images/glc.1.jpg" alt="a7">
+                </div>
+                <div class="slides4">
+                    <div class="numbertext"></div>
+                    <img src="images/glc.2.jpg" alt="a7">
+                </div>
+                <div class="slides4">
+                    <div class="numbertext"></div>
+                    <img src="images/glc.3.jpg" alt="a7">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1,3)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1,3)">&#10095;</a>
+            </div>
+            <div class="advInfo">
+                <h2 class="carName">Mercedes-Benz GLC 400 d 4M AMG</h2>
+                <h2>Година: 2020</h2>
+                <h2>Пробег: 9000 км</h2>
+                <h2>Мощност: 330 к.с.</h2>
+                <h2>Гориво: Дизел</h2>
+                <h2>Скоростна кутия: Автоматична</h2>
+                <h2 class="carPrice">Цена: 65.600 €</h2 class="carPrice">
+            </div>
+        </div>
+        <div class="advertisement">
+            <div class="slideshow">
+                <div class="slides5">
+                    <div class="numbertext"></div>
+                    <img src="images/c.1.jpg" alt="c">
+                </div>
+                <div class="slides5">
+                    <div class="numbertext"></div>
+                    <img src="images/c.2.jpg" alt="c">
+                </div>
+                <div class="slides5">
+                    <div class="numbertext"></div>
+                    <img src="images/c.3.jpg" alt="c">
+                </div>
+                <div class="slides5">
+                    <div class="numbertext"></div>
+                    <img src="images/c.4.jpg" alt="c">
+                </div>
+                <div class="slides5">
+                    <div class="numbertext"></div>
+                    <img src="images/c.5.jpg" alt="c">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1,4)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1,4)">&#10095;</a>
+            </div>
+            <div class="advInfo">
+                <h2 class="carName">Mercedes-Benz C250*3x AMG* 4Matic *</h2>
+                <h2>Година: 2016</h2>
+                <h2>Пробег: 46.300 км</h2>
+                <h2>Мощност: 204 к.с.</h2>
+                <h2>Гориво: Дизел</h2>
+                <h2>Скоростна кутия: Автоматична</h2>
+                <h2 class="carPrice">Цена: 36.799 €</h2 class="carPrice">
+            </div>
+        </div>
+        <div class="advertisement">
+            <div class="slideshow">
+                <div class="slides6">
+                    <div class="numbertext"></div>
+                    <img src="images/gle.1.jpg" alt="gle">
+                </div>
+                <div class="slides6">
+                    <div class="numbertext"></div>
+                    <img src="images/gle.2.jpg" alt="gle">
+                </div>
+                <div class="slides6">
+                    <div class="numbertext"></div>
+                    <img src="images/gle.3.jpg" alt="gle">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1,5)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1,5)">&#10095;</a>
+            </div>
+            <div class="advInfo">
+                <h2 class="carName">Mercedes-Benz GLE 250d 4M</h2>
+                <h2>Година: 2016</h2>
+                <h2>Пробег: 98.579 км</h2>
+                <h2>Мощност: 204 к.с.</h2>
+                <h2>Гориво: Дизел</h2>
+                <h2>Скоростна кутия: Автоматична</h2>
+                <h2 class="carPrice">Цена: 31.260 €</h2 class="carPrice">
+            </div>
+        </div>
+        <div class="advertisement">
+            <div class="slideshow">
+                <div class="slides7">
+                    <div class="numbertext"></div>
+                    <img src="images/macan.1.jpg" alt="macan">
+                </div>
+                <div class="slides7">
+                    <div class="numbertext"></div>
+                    <img src="images/macan.2.jpg" alt="macan">
+                </div>
+                <div class="slides7">
+                    <div class="numbertext"></div>
+                    <img src="images/macan.3.jpg" alt="macan">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1,6)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1,6)">&#10095;</a>
+            </div>
+            <div class="advInfo">
+                <h2 class="carName">Porsche Macan S Diesel</h2>
+                <h2>Година: 2016</h2>
+                <h2>Пробег: 79.824 км</h2>
+                <h2>Мощност: 258 к.с.</h2>
+                <h2>Гориво: Дизел</h2>
+                <h2>Скоростна кутия: Автоматична</h2>
+                <h2 class="carPrice">Цена: 44.650 €</h2 class="carPrice">
+            </div>
+        </div>
+        <div class="advertisement">
+            <div class="slideshow">
+                <div class="slides8">
+                    <div class="numbertext"></div>
+                    <img src="images/panamera.1.jpg" alt="panamera">
+                </div>
+                <div class="slides8">
+                    <div class="numbertext"></div>
+                    <img src="images/panamera.2.jpg" alt="panamera">
+                </div>
+                <div class="slides8">
+                    <div class="numbertext"></div>
+                    <img src="images/panamera.3.jpg" alt="panamera">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1,7)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1,7)">&#10095;</a>
+            </div>
+            <div class="advInfo">
+                <h2 class="carName">Porsche Panamera Turbo</h2>
+                <h2>Година: 2015</h2>
+                <h2>Пробег: 74.404 км</h2>
+                <h2>Мощност: 519 к.с.</h2>
+                <h2>Гориво: Бензин</h2>
+                <h2>Скоростна кутия: Автоматична</h2>
+                <h2 class="carPrice">Цена: 51.970 €</h2 class="carPrice">
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>
+            Адрес: <br>
+            България, гр.София, <br>
+            бул. „Александър Малинов“ 91 <br>
+            Телефон: +359 888 282 404<br>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="slideshow-script.js"></script>
+</body>
+</html>
